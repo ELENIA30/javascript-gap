@@ -18,5 +18,5 @@ const daysLeftToCmas = () => {
 }
 
 console.log(daysLeftToCmas(cmas(), todayDate()))
-console.log(new Date())
+
 export {todayDate, cmas, daysLeftToCmas};
