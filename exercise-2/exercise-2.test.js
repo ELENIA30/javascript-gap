@@ -10,6 +10,10 @@ test("test todayDate function", () => {
 test("test cmas", () => {
     expect(cmas().toLocaleDateString()).toBe("12/25/2022")
 })
+//set the en-us format
+test("test cmas", () => {
+    expect(cmas().toLocaleDateString("en-us")).toBe("12/25/2022")
+})
 
 test("test daysLeftToCmas", () => {
     expect(daysLeftToCmas()).toBeGreaterThanOrEqual(0);

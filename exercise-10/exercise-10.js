@@ -4,7 +4,7 @@ var student = {
     rollno: 12,
 }
 
-const deleteRollno = () => {
+/* const deleteRollno = () => {
     let newStudent = {}
     const studentKeys = Object.keys(student)
     studentKeys.forEach(key => {
@@ -13,6 +13,11 @@ const deleteRollno = () => {
         }
     })
     return newStudent
+} */
+//cleaner version
+const deleteRollno = () => {
+    delete student.rollno;
+    return student;
 }
 
 

@@ -1,7 +1,10 @@
 const extractValueOfArray = (array, indexes) => {
     let newArray = []
 
-    indexes.map((v) => newArray.push(array[v]))
+/*  indexes.map((v) => newArray.push(array[v]))
+    return newArray*/
+//better than map because I don't need a new array
+    indexes.forEach( (v) => newArray.push(array[v]));
     return newArray
 }
 
